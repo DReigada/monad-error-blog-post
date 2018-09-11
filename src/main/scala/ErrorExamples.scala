@@ -30,7 +30,7 @@ class ErrorExamples {
 
   // Usage
 
-  def toJson[F[_], E](str: String)(implicit M: MonadError[F, E], E: GenericError[E]): F[Json] =
+  def toJson[F[_], E](str: String)(implicit M: MonadError[F, E], E: UIError[E]): F[Json] =
     if (success) M.pure(result)
     else M.raiseError(E.errorFromString("Could not parse JSON String"))
 
