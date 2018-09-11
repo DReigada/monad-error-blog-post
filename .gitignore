@@ -1,0 +1,35 @@
+# Node rules:
+## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+## Dependency directory
+## Commenting this out is preferred by some people, see
+## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+node_modules/
+
+# Book build output
+_book/
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
+### Scala template
+*.class
+*.log
+### SBT template
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+
+
+.idea/
